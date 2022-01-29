@@ -3,7 +3,7 @@ cmd="date"
 cur_month=`$cmd | cut -d " " -f 2`
 cur_year=`$cmd | cut -d " " -f 6`
 echo $cur_month $cur_year
-for i in {1100..1125}
+for i in {1..365}
 do
  cmd="date -j -v -$i"d
  echo $cmd 
