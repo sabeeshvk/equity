@@ -1,0 +1,2 @@
+#Remove ascii files .  When dowloading trading data zip files , trading holiday files have error message in ASCII
+file * | grep ASCII | cut -f 1 -d: | xargs rm
